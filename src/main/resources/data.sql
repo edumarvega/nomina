@@ -1,0 +1,1 @@
+INSERT INTO CONFIGURACION (ID,URL,TOKEN) VALUES (1, 'https://servicios-testing.colegio-escribanos.org.ar:8444/nomina-escribanos-ws/escribano/estado/', '');    

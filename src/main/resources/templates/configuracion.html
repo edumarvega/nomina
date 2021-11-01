@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Nomina de Escribanos CECBA</title>
+
+    <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/4.0.0-2/css/bootstrap.min.css} "/>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+        	<br>
+			<h2>Configuracion API Nómina</h2>
+			<hr size="2px">
+			<button id="forwardNomina" type="button" class="btn btn-link float-right" onClick="submitNominaForm();">[Volver a Consultar Cuit]</button>
+			<br>
+			<h4>Información Api Nómina</h4>
+			<br>
+			<form id="save-form" class="form-inline">
+			 	<label class="mr-sm-2">Token:</label>
+				<input type="text" id="token" class="form-control mb-2 mr-sm-2" size="13" data-toggle="tooltip" title=""/>
+				<button type="submit" id="bth-save" class="btn btn-success mb-2">&nbsp;&nbsp;Guardar&nbsp;&nbsp;</button>
+			</form>
+			<div id="feedback"></div>
+			<form id="nomina-form" action="#" th:action="@{/nomina}" th:object="${nomina}" method="GET">
+			</form>
+        </div>
+    </div>
+</div>
+
+<script th:src="@{/webjars/jquery/3.0.0/jquery.min.js}"></script>
+<script th:src="@{/webjars/popper.js/1.12.9-1/umd/popper.min.js}"></script>
+<script th:src="@{/webjars/bootstrap/4.0.0-2/js/bootstrap.min.js}"></script>
+
+
+<script type="text/javascript" src="js/configuracion.js"></script>
+
+
+</body>
+</html>

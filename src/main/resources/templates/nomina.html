@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Nomina de Escribanos CECBA</title>
+
+    <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/4.0.0-2/css/bootstrap.min.css} "/>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+        	<br>
+			<h2>Nómina de Escribanos</h2>
+			<hr size="2px">
+			<button id="forwardConfiguracion" type="button" class="btn btn-link float-right" onClick="submitConfiguracionForm();">[Configurar token]</button>
+			<br>
+			<h4>Búsqueda</h4>
+			<br>
+			<form id="search-form" class="form-inline">
+			 	<label class="mr-sm-2">CUIT:</label>
+				<input type="text" class="form-control mb-2 mr-sm-2" id="cuit" size="13" maxlength="13" data-toggle="tooltip" title=""/>
+				<button type="submit" id="bth-search" class="btn btn-success mb-2">&nbsp;&nbsp;Buscar&nbsp;&nbsp;</button>
+			</form>
+			<div id="feedback"></div>
+			<form id="configurar-form" action="#" th:action="@{/configuracion}" th:object="${configuracion}" method="GET">
+			</form>
+			<input type="hidden" th:value="${bloquearPantalla}" name="bloquearPantalla" id="bloquearPantalla" />
+        </div>
+    </div>
+</div>
+
+<script th:src="@{/webjars/jquery/3.0.0/jquery.min.js}"></script>
+<script th:src="@{/webjars/popper.js/1.12.9-1/umd/popper.min.js}"></script>
+<script th:src="@{/webjars/bootstrap/4.0.0-2/js/bootstrap.min.js}"></script>
+
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/nomina.js"></script>
+<script type="text/javascript" src="js/maskedinput/jquery.maskedinput.js"></script>
+<script type="text/javascript" src="js/blockUI/jquery.blockUI.js"></script>
+
+
+</body>
+</html>
