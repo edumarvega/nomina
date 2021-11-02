@@ -50,7 +50,7 @@ java -jar nomina-0.0.1-SNAPSHOT.war
 
 Ingresar en cualquier navegador lo siguiente:
 http://localhost:8080
-Al ingresar por primera vez se mostrara un mensaje de advertencia solicitando que genere el token que es requerido para consultar las nominas de escribanos, para ello hay que hacer click el botón Configurar token.
+Al ingresar por primera vez se mostrara un mensaje de advertencia solicitando que configure un token, (hay que generar un token en el PASO 10) que es requerido para consultar las nominas de escribanos, para ello hay que hacer click el botón Configurar token.
 
 ![image](https://user-images.githubusercontent.com/6340170/139837375-962bcf92-768d-4f5f-826e-17aa726fa0a7.png)
 
