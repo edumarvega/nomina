@@ -69,12 +69,12 @@ var secret = "MlDGaOysFvHEUYh6qlGRXdAfqxCjwHskKewN";
 ![image](https://user-images.githubusercontent.com/6340170/139837701-a131230e-6bac-4045-a7b2-3e7a45b893e5.png)
 ![image](https://user-images.githubusercontent.com/6340170/139837782-6915c79a-1fad-4977-91df-a5e2a188ca81.png)
 
-PASO 11:Volver a la pantalla de consulta de cuit e ingresar el siguiente cuil para la prueba 20-26157300-9:
+PASO 11: Con ese token generado ingresarlo en el campo token y Volver a la pantalla de consulta de cuit e ingresar el siguiente cuil para la prueba 20-26157300-9:
 
 ![image](https://user-images.githubusercontent.com/6340170/139837872-139ef52d-3b5c-4ded-be9e-72689c19d7fb.png)
 ![image](https://user-images.githubusercontent.com/6340170/139838101-b449bb1a-3cc7-4a66-8946-0601ce5ce0be.png)
 
-Con ese token generado ingresarlo en el campo token
+
 
 
 
