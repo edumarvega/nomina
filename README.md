@@ -36,10 +36,35 @@ PASO 8: Levantar el war con el siguiente comando:
 java -jar nomina-0.0.1-SNAPSHOT.war
 ![image](https://user-images.githubusercontent.com/6340170/139834691-19adc3fc-6abe-4638-a009-2c708cf9f498.png)
 
-PASO 9: Una vez levantado el sevidor tomcat embebido sobre el puerto 8080, ingresar en cualquier navegador lo siguiente:
-http://localhost:8080
+PASO 9: Una vez levantado el sevidor tomcat embebido sobre el puerto 8080
 ![image](https://user-images.githubusercontent.com/6340170/139835124-ea1c8544-9ef3-4b99-8e6d-cd952c50a441.png)
-Al ingresar por primera vez se mostrara un mensaje de advertencia solicitando que genere el token que es requerido para consultar las nominas de escribanos, para ello hay que hacer click en el link arriba a la derecha de la pantalla que dice [Configurar token]
+Ingresar en cualquier navegador lo siguiente:
+http://localhost:8080
+Al ingresar por primera vez se mostrara un mensaje de advertencia solicitando que genere el token que es requerido para consultar las nominas de escribanos, para ello hay que hacer click el botón Configurar token.
+![image](https://user-images.githubusercontent.com/6340170/139837375-962bcf92-768d-4f5f-826e-17aa726fa0a7.png)
+
+PASO 10: genear un token en https://codepen.io/sergio__/pen/NZzYNb?editors=001 con estos datos:
+var data = {
+    "iss": "candidato-MlDG",
+    "iat": now / 1000,
+    "exp": (now.getTime() + 2*60000) / 1000,
+    "aud": "nomina-escribanos-ws",
+    "sub": "examen-tecnico",
+    "role": [ "EXTERNOS" ]
+}; 
+
+var secret = "MlDGaOysFvHEUYh6qlGRXdAfqxCjwHskKewN";
+![image](https://user-images.githubusercontent.com/6340170/139837701-a131230e-6bac-4045-a7b2-3e7a45b893e5.png)
+![image](https://user-images.githubusercontent.com/6340170/139837782-6915c79a-1fad-4977-91df-a5e2a188ca81.png)
+
+PASO 11:Volver a la pantalla de consulta de cuit e ingresar el siguiente cuil para la prueba 20-26157300-9:
+![image](https://user-images.githubusercontent.com/6340170/139837872-139ef52d-3b5c-4ded-be9e-72689c19d7fb.png)
+![image](https://user-images.githubusercontent.com/6340170/139838101-b449bb1a-3cc7-4a66-8946-0601ce5ce0be.png)
+
+
+
+Con ese token generado ingresarlo en el campo token
+
 
 
 
