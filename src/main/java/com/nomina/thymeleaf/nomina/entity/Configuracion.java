@@ -1,16 +1,22 @@
 package com.nomina.thymeleaf.nomina.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="configuracion")
 public class Configuracion {
 	
 	@Id
 	@GeneratedValue
+	@Column(name="id")
 	private Integer id;
+	@Column(name="url")
 	private String url;
+	@Column(name="token")
 	private String token;
 	
 	public Configuracion() {
